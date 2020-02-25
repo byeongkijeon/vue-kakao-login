@@ -87,6 +87,8 @@ export default {
         Kakao.init(comp.apiKey);
       },
       loginWithKakao: () => {
+        console.log("카카오");
+        alert("카카오");
         Kakao.Auth.login({
           success: (authObj) => this.onSuccess(authObj),
           fail: (err) => this.onFailure(err)
